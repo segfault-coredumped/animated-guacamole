@@ -3,6 +3,7 @@ function boxFontSize() {
 }
 
 function makeFancy() {
+  // target the text being typed directly and store it in a var
   const fancify = document.getElementById("boxtext");
 
   fancify.style.fontWeight = "bold"
@@ -11,7 +12,11 @@ function makeFancy() {
 }
 
 function resetFancy() {
-  document.getElementById("boxtext").style.fontWeight = "normal"
+  const unfancify = document.getElementById("boxtext");
+
+  unfancify.style.fontWeight = "normal"
+  unfancify.style.color = "black"
+  unfancify.style.textDecoration = "none"
 }
 
 function mooBut() {
